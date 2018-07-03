@@ -1,7 +1,7 @@
 var cooking = require('cooking');
 var config = require('./config');
 var ProgressBarPlugin = require('progress-bar-webpack-plugin');
-var jsLoader = process.env.CI_ENV ? 'isparta-loader' : 'isparta-loader!eslint-loader';
+var jsLoader = process.env.CI_ENV ? 'isparta-loader' : 'isparta-loader';
 
 cooking.set({
   entry: './src/index.js',
